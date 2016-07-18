@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WTCalendarController_Example' do
+  pod 'WTCalendarController', :path => '../'
+
+  target 'WTCalendarController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
