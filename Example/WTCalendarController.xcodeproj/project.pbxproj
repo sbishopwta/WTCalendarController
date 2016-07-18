@@ -23,6 +23,7 @@
 		6F10E61268FA120742027557 /* Pods_WTCalendarController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB08243C55790678E2EAC382 /* Pods_WTCalendarController_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		EC613BF938C6834E3C2CEB41 /* Pods_WTCalendarController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A144ECE03E4738D84BCEE14 /* Pods_WTCalendarController_Tests.framework */; };
+		FD7A74F81D3D2DE200789568 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD7A74F71D3D2DE200789568 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		D23C2775F9F7B99DB5D9C91A /* Pods-WTCalendarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTCalendarController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTCalendarController_Example/Pods-WTCalendarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D5BEE63125446FED2EB8B300 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EB08243C55790678E2EAC382 /* Pods_WTCalendarController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTCalendarController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7A74F71D3D2DE200789568 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FD7A74F91D3D65A000789568 /* WTCalendarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WTCalendarController.framework; path = "../../../../Library/Developer/Xcode/DerivedData/WTCalendarController-cvbkmxssywqaonddhrgcboyemdvn/Build/Products/Debug-iphoneos/WTCalendarController/WTCalendarController.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FD7A74F91D3D65A000789568 /* WTCalendarController.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -147,6 +151,7 @@
 				6003F5A5195388D20070C39A /* WTViewController.h */,
 				6003F5A6195388D20070C39A /* WTViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				FD7A74F71D3D2DE200789568 /* Launch Screen.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for WTCalendarController";
@@ -276,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7A74F81D3D2DE200789568 /* Launch Screen.storyboard in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -467,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -500,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -516,6 +522,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WTCalendarController/WTCalendarController-Prefix.pch";
 				INFOPLIST_FILE = "WTCalendarController/WTCalendarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +539,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WTCalendarController/WTCalendarController-Prefix.pch";
 				INFOPLIST_FILE = "WTCalendarController/WTCalendarController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

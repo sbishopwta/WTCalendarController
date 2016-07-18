@@ -1,0 +1,16 @@
+PODS:
+  - WTCalendarController (0.1.0)
+
+DEPENDENCIES:
+  - WTCalendarController (from `../`)
+
+EXTERNAL SOURCES:
+  WTCalendarController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WTCalendarController: 147c2a5635788f94412b7c55a0e917d653121253
+
+PODFILE CHECKSUM: 5f177981cf4ba536ccc7f158c680bb84320ea249
+
+COCOAPODS: 1.0.0.beta.5

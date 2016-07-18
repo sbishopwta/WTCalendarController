@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F589195388D20070C39A"
-               BuildableName = "WTCalendarController_Example.app"
-               BlueprintName = "WTCalendarController_Example"
-               ReferencedContainer = "container:WTCalendarController.xcodeproj">
+               BlueprintIdentifier = "CE1CB30E8AD7126DE75ED9A76671C2B2"
+               BuildableName = "WTCalendarController.framework"
+               BlueprintName = "WTCalendarController"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6003F5AD195388D20070C39A"
-               BuildableName = "WTCalendarController_Tests.xctest"
-               BlueprintName = "WTCalendarController_Tests"
-               ReferencedContainer = "container:WTCalendarController.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "WTCalendarController_Example.app"
-            BlueprintName = "WTCalendarController_Example"
-            ReferencedContainer = "container:WTCalendarController.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -61,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "WTCalendarController_Example.app"
-            BlueprintName = "WTCalendarController_Example"
-            ReferencedContainer = "container:WTCalendarController.xcodeproj">
+            BlueprintIdentifier = "CE1CB30E8AD7126DE75ED9A76671C2B2"
+            BuildableName = "WTCalendarController.framework"
+            BlueprintName = "WTCalendarController"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6003F589195388D20070C39A"
-            BuildableName = "WTCalendarController_Example.app"
-            BlueprintName = "WTCalendarController_Example"
-            ReferencedContainer = "container:WTCalendarController.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

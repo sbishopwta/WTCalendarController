@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WTCalendarController'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WTCalendarController.'
+  s.summary          = 'A fast, simple, and flexible calendar controller with multiple date selection functionality.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This is a test description to explain what this library does. A fast, simple, and flexible calendar controller with multiple date selection functionality.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/WTCalendarController'
+  s.homepage         = 'https://github.com/sbishopwta/WTCalendarController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Steven Bishop' => 'sbishop@alumni.berklee.edu' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/WTCalendarController.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/sbishopwta/WTCalendarController.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/stevenbishop'
 
   s.ios.deployment_target = '8.0'
 

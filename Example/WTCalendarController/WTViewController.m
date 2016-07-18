@@ -7,23 +7,51 @@
 //
 
 #import "WTViewController.h"
+#import <WTCalendarController/CalendarViewController.h>
+//#import <WTCalendarController/CalendarController.h>
 
-@interface WTViewController ()
-
+@interface WTViewController () <CalendarDelegate>
 @end
 
 @implementation WTViewController
 
-- (void)viewDidLoad
+- (IBAction)presentCalendarTapped:(id)sender
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [UIBarButtonItem appearance].tintColor = [UIColor redColor];
+    [[CalendarDayCollectionViewCell appearance] setSelectedDateBackgroundColor:[UIColor redColor]];
+
+    CalendarViewController *calendarController = [CalendarViewController buildWithDelegate:self];
+
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDate *endDate = [calendar dateByAddingUnit:NSCalendarUnitYear value:2 toDate:[NSDate date] options:NSCalendarWrapComponents];
+    calendarController.endDate = endDate;
+
+    NSDate *selectedStartDate = [calendar dateByAddingUnit:NSCalendarUnitMonth value:1 toDate:[NSDate date] options:NSCalendarMatchStrictly];
+    NSDate *selectedEndDate = [calendar dateByAddingUnit:NSCalendarUnitMonth value:1 toDate:selectedStartDate options:NSCalendarMatchStrictly];
+    calendarController.selectedStartDate = selectedStartDate;
+    calendarController.selectedEndDate = selectedEndDate;
+
+    calendarController.useStickyHeaders = YES;
+    calendarController.shouldShowDoneButton = YES;
+    calendarController.dateRangeShouldCoverEmptySpace = NO;
+
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:calendarController];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        navigationController.modalPresentationStyle = UIModalPresentationFormSheet;
+    }
+
+    [self.navigationController presentViewController:navigationController animated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)pushCalendarTapped:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [[UIBarButtonItem appearance] setTintColor:[UIColor blueColor]];
+    [[CalendarDayCollectionViewCell appearance] setSelectedDateBackgroundColor:[UIColor blueColor]];
+
+    CalendarViewController *calendarController = [CalendarViewController buildWithDelegate:self];
+    calendarController.shouldShowDateRangeFooterView = NO;
+    [self.navigationController pushViewController:calendarController animated:YES];
 }
+
 
 @end

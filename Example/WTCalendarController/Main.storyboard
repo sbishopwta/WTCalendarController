@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kzx-Mu-Ja9">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,10 +16,57 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FY-6H-mWJ">
+                                <rect key="frame" x="15" y="79" width="570" height="30"/>
+                                <state key="normal" title="Present Calendar Controller">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentCalendarTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="kK6-2M-sf1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kxP-rn-m1d">
+                                <rect key="frame" x="15" y="117" width="570" height="30"/>
+                                <state key="normal" title="Push Calendar Controller">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pushCalendarTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="iLQ-XX-Gcd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9FY-6H-mWJ" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="KlA-V2-meP"/>
+                            <constraint firstAttribute="trailing" secondItem="9FY-6H-mWJ" secondAttribute="trailing" constant="15" id="ewh-Et-yUJ"/>
+                            <constraint firstAttribute="trailing" secondItem="kxP-rn-m1d" secondAttribute="trailing" constant="15" id="imo-JI-MN8"/>
+                            <constraint firstItem="kxP-rn-m1d" firstAttribute="top" secondItem="9FY-6H-mWJ" secondAttribute="bottom" constant="8" id="m81-CT-Iiy"/>
+                            <constraint firstItem="kxP-rn-m1d" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="nzD-ZR-dP5"/>
+                            <constraint firstItem="9FY-6H-mWJ" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="15" id="wAj-wa-Lot"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="irA-ou-3i6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f29-e9-HsY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kzx-Mu-Ja9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qDM-54-oLd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="rootViewController" id="WBA-e7-que"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwA-9t-HiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
         </scene>

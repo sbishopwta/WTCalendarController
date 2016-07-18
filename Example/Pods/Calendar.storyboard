@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Dates-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController title="Select Dates" id="vXZ-lx-hvc" customClass="CalendarViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zI-H6-64I">
+                                <rect key="frame" x="0.0" y="20" width="600" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idx-og-wTM" userLabel="Sep View">
+                                <rect key="frame" x="0.0" y="40" width="600" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="i0g-Mk-Iul"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTq-qN-kKR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3x-Fv-knO">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-Uj-Xtz">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.5" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Sunday" label="Sunday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwh-TE-2IE">
+                                                <rect key="frame" x="85" y="0.0" width="86" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Monday" label="Monday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVo-bj-YMl">
+                                                <rect key="frame" x="171" y="0.0" width="85.5" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Tuesday" label="Tuesday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjU-gv-wne">
+                                                <rect key="frame" x="257" y="0.0" width="86" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Wednesday" label="Wednesday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwc-4G-vbD">
+                                                <rect key="frame" x="343" y="0.0" width="85.5" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Thursday" label="Thursday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWP-zr-aGk">
+                                                <rect key="frame" x="428" y="0.0" width="86" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Friday" label="Friday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDn-wg-84i">
+                                                <rect key="frame" x="514" y="0.0" width="85.5" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Saturday" label="Saturday"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Lwh-TE-2IE" firstAttribute="leading" secondItem="wYu-Uj-Xtz" secondAttribute="trailing" id="1C6-aE-MGa"/>
+                                            <constraint firstAttribute="height" constant="20" id="1cD-Qv-3w8"/>
+                                            <constraint firstItem="Lwc-4G-vbD" firstAttribute="leading" secondItem="WjU-gv-wne" secondAttribute="trailing" id="2oH-15-o8c"/>
+                                            <constraint firstItem="pDn-wg-84i" firstAttribute="leading" secondItem="aWP-zr-aGk" secondAttribute="trailing" id="3Lr-Pm-xyf"/>
+                                            <constraint firstAttribute="bottom" secondItem="tVo-bj-YMl" secondAttribute="bottom" id="3hd-5L-B4M"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="width" secondItem="Lwc-4G-vbD" secondAttribute="width" id="53A-Sa-XJ3"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lwh-TE-2IE" secondAttribute="bottom" id="D9i-zT-XxW"/>
+                                            <constraint firstItem="WjU-gv-wne" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="DQD-z1-kWQ"/>
+                                            <constraint firstItem="tVo-bj-YMl" firstAttribute="leading" secondItem="Lwh-TE-2IE" secondAttribute="trailing" id="DQq-rR-I6D"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="width" secondItem="tVo-bj-YMl" secondAttribute="width" id="DT3-UL-JjT"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="leading" secondItem="m3x-Fv-knO" secondAttribute="leading" id="Hpu-YF-OaE"/>
+                                            <constraint firstItem="Lwc-4G-vbD" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="Mz9-WX-kvd"/>
+                                            <constraint firstItem="pDn-wg-84i" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="N5W-jy-T5J"/>
+                                            <constraint firstAttribute="bottom" secondItem="WjU-gv-wne" secondAttribute="bottom" id="Twj-uk-sta"/>
+                                            <constraint firstAttribute="bottom" secondItem="aWP-zr-aGk" secondAttribute="bottom" id="ZoI-vw-YCW"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="width" secondItem="pDn-wg-84i" secondAttribute="width" id="dFX-js-jAr"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="width" secondItem="WjU-gv-wne" secondAttribute="width" id="dS9-u0-5w5"/>
+                                            <constraint firstItem="aWP-zr-aGk" firstAttribute="leading" secondItem="Lwc-4G-vbD" secondAttribute="trailing" id="dnN-vc-PJu"/>
+                                            <constraint firstItem="Lwh-TE-2IE" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="eOr-L9-Q2O"/>
+                                            <constraint firstAttribute="bottom" secondItem="wYu-Uj-Xtz" secondAttribute="bottom" id="eu9-9c-e5m"/>
+                                            <constraint firstAttribute="trailing" secondItem="pDn-wg-84i" secondAttribute="trailing" id="he4-qz-REZ"/>
+                                            <constraint firstItem="tVo-bj-YMl" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="lAL-RO-NNE"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="width" secondItem="aWP-zr-aGk" secondAttribute="width" id="lyP-x1-feL"/>
+                                            <constraint firstItem="WjU-gv-wne" firstAttribute="leading" secondItem="tVo-bj-YMl" secondAttribute="trailing" id="pjJ-Rd-4S0"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="q9v-1N-4fu"/>
+                                            <constraint firstAttribute="bottom" secondItem="pDn-wg-84i" secondAttribute="bottom" id="qGm-zC-JZc"/>
+                                            <constraint firstItem="wYu-Uj-Xtz" firstAttribute="width" secondItem="Lwh-TE-2IE" secondAttribute="width" id="rj7-t4-nqD"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lwc-4G-vbD" secondAttribute="bottom" id="tzl-V7-i2G"/>
+                                            <constraint firstItem="aWP-zr-aGk" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="ypo-Mz-kt9"/>
+                                        </constraints>
+                                    </view>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B3t-3q-vIC">
+                                        <rect key="frame" x="0.0" y="21" width="600" height="495"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="g7a-jd-IOG">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="50" height="50"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells/>
+                                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarMonthView" id="AGe-om-BP6">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </collectionReusableView>
+                                        <connections>
+                                            <outlet property="dataSource" destination="vXZ-lx-hvc" id="bVw-2j-CQ2"/>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="9dM-MZ-ILp"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M40-ha-WT4" customClass="CalendarDateRangeView">
+                                        <rect key="frame" x="0.0" y="516" width="600" height="64"/>
+                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="o9D-lU-G4Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="m3x-Fv-knO" firstAttribute="top" secondItem="OTq-qN-kKR" secondAttribute="top" id="24M-kH-dO5"/>
+                                    <constraint firstItem="B3t-3q-vIC" firstAttribute="leading" secondItem="OTq-qN-kKR" secondAttribute="leading" id="9Je-lu-Gtb"/>
+                                    <constraint firstItem="M40-ha-WT4" firstAttribute="leading" secondItem="OTq-qN-kKR" secondAttribute="leading" id="TYG-Ia-LBN"/>
+                                    <constraint firstItem="m3x-Fv-knO" firstAttribute="leading" secondItem="OTq-qN-kKR" secondAttribute="leading" id="Y9U-8F-cjR"/>
+                                    <constraint firstAttribute="trailing" secondItem="M40-ha-WT4" secondAttribute="trailing" id="cEZ-Gh-pZG"/>
+                                    <constraint firstItem="M40-ha-WT4" firstAttribute="top" secondItem="B3t-3q-vIC" secondAttribute="bottom" id="cs5-eb-mjD"/>
+                                    <constraint firstAttribute="trailing" secondItem="B3t-3q-vIC" secondAttribute="trailing" id="guB-um-vCi"/>
+                                    <constraint firstItem="B3t-3q-vIC" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="bottom" constant="1" id="oC6-2g-ybk"/>
+                                    <constraint firstAttribute="bottom" secondItem="M40-ha-WT4" secondAttribute="bottom" id="taq-1Y-D7r"/>
+                                    <constraint firstAttribute="trailing" secondItem="m3x-Fv-knO" secondAttribute="trailing" id="upZ-UJ-Qks"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="TYG-Ia-LBN"/>
+                                        <exclude reference="cEZ-Gh-pZG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OTq-qN-kKR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="PxI-GI-gDG"/>
+                            <constraint firstItem="3zI-H6-64I" firstAttribute="height" secondItem="m3x-Fv-knO" secondAttribute="height" id="QN8-bD-wrj"/>
+                            <constraint firstItem="3zI-H6-64I" firstAttribute="top" secondItem="m3x-Fv-knO" secondAttribute="top" id="RCk-aI-HZ4"/>
+                            <constraint firstAttribute="trailing" secondItem="OTq-qN-kKR" secondAttribute="trailing" id="Ujj-MB-szE"/>
+                            <constraint firstItem="3zI-H6-64I" firstAttribute="trailing" secondItem="B3t-3q-vIC" secondAttribute="trailing" id="ZoC-Iw-mXv"/>
+                            <constraint firstAttribute="trailing" secondItem="idx-og-wTM" secondAttribute="trailing" id="dRg-zS-61a"/>
+                            <constraint firstItem="OTq-qN-kKR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gVu-v4-wjH"/>
+                            <constraint firstItem="idx-og-wTM" firstAttribute="top" secondItem="3zI-H6-64I" secondAttribute="bottom" id="kro-ap-geZ"/>
+                            <constraint firstItem="3zI-H6-64I" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="mk1-Oa-KQ0"/>
+                            <constraint firstItem="3zI-H6-64I" firstAttribute="leading" secondItem="B3t-3q-vIC" secondAttribute="leading" id="p8A-Jv-Ev6"/>
+                            <constraint firstAttribute="bottom" secondItem="OTq-qN-kKR" secondAttribute="bottom" id="qQr-3X-BeQ"/>
+                            <constraint firstItem="M40-ha-WT4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-20" id="uee-aV-4nv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M40-ha-WT4" secondAttribute="trailing" constant="-20" id="veI-Mk-aOL"/>
+                            <constraint firstItem="idx-og-wTM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="x3p-Gn-MgN"/>
+                            <constraint firstAttribute="trailing" secondItem="3zI-H6-64I" secondAttribute="trailing" id="zK5-JN-wSO"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mk1-Oa-KQ0"/>
+                                <exclude reference="zK5-JN-wSO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="LDp-eL-VPx"/>
+                    <connections>
+                        <outlet property="calendarDateRangeView" destination="M40-ha-WT4" id="qU2-dp-J86"/>
+                        <outlet property="collectionView" destination="B3t-3q-vIC" id="IOr-cd-2f6"/>
+                        <outlet property="dateRangeViewHeightConstraint" destination="o9D-lU-G4Y" id="3Zj-3e-pu6"/>
+                        <outlet property="daysOfTheWeekView" destination="3zI-H6-64I" id="7Tj-gt-UVU"/>
+                        <outlet property="flowLayout" destination="g7a-jd-IOG" id="BSt-ib-IJb"/>
+                        <outlet property="fridayLabel" destination="aWP-zr-aGk" id="zsV-hG-lXb"/>
+                        <outlet property="leadingConstraint" destination="gVu-v4-wjH" id="txd-og-d7y"/>
+                        <outlet property="mondayLabel" destination="Lwh-TE-2IE" id="3b8-Pi-0sF"/>
+                        <outlet property="saturdayLabel" destination="pDn-wg-84i" id="VvV-v0-MaV"/>
+                        <outlet property="sundayLabel" destination="wYu-Uj-Xtz" id="9M7-cP-LAH"/>
+                        <outlet property="thursdayLabel" destination="Lwc-4G-vbD" id="iaW-hf-pj6"/>
+                        <outlet property="trailingConstraint" destination="Ujj-MB-szE" id="5BU-Sd-g4E"/>
+                        <outlet property="tuesdayLabel" destination="tVo-bj-YMl" id="m4l-Di-rPj"/>
+                        <outlet property="wednesdayLabel" destination="WjU-gv-wne" id="Lea-9G-QZp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="254"/>
+        </scene>
+    </scenes>
+</document>

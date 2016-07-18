@@ -1,0 +1,6 @@
+framework module Pods_WTCalendarController_Example {
+  umbrella header "Pods-WTCalendarController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
