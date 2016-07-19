@@ -120,6 +120,3 @@
 @property (strong, nonatomic) NSString *endDateHeaderText;
 
 @end
-
-//##OBJCLEAN_ENDSKIP##
-

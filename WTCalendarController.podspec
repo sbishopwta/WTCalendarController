@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WTCalendarController'
   s.version          = '0.1.0'
-  s.summary          = 'A fast, simple, and flexible calendar controller with multiple date selection functionality.'
+  s.summary          = 'A UI calendar controller for iOS.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This is a test description to explain what this library does. A fast, simple, and flexible calendar controller with multiple date selection functionality.
+    A fast, simple, and flexible calendar controller with multiple date selection functionality.
+   WTACalendarController is perfect for having users select dates.
+   WTACalendarController supports the Gregorian calendar.
                        DESC
 
   s.homepage         = 'https://github.com/sbishopwta/WTCalendarController'
