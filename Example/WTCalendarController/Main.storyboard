@@ -35,22 +35,73 @@
                                     <action selector="pushCalendarTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="iLQ-XX-Gcd"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zib-gE-873" userLabel="Selected Dates Container">
+                                <rect key="frame" x="15" y="177" width="570" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Start Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2we-dk-Skf">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected End Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6w8-kg-7yW">
+                                        <rect key="frame" x="285" y="0.0" width="285" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6w8-kg-7yW" firstAttribute="top" secondItem="zib-gE-873" secondAttribute="top" id="8Sc-wR-phs"/>
+                                    <constraint firstItem="2we-dk-Skf" firstAttribute="width" secondItem="6w8-kg-7yW" secondAttribute="width" id="Gye-rV-evy"/>
+                                    <constraint firstAttribute="bottom" secondItem="2we-dk-Skf" secondAttribute="bottom" id="I5y-wj-oYe"/>
+                                    <constraint firstAttribute="bottom" secondItem="6w8-kg-7yW" secondAttribute="bottom" id="IaM-kT-nHR"/>
+                                    <constraint firstAttribute="trailing" secondItem="6w8-kg-7yW" secondAttribute="trailing" id="Keh-7k-rcJ"/>
+                                    <constraint firstItem="2we-dk-Skf" firstAttribute="leading" secondItem="zib-gE-873" secondAttribute="leading" id="KzN-CT-2It"/>
+                                    <constraint firstItem="6w8-kg-7yW" firstAttribute="leading" secondItem="2we-dk-Skf" secondAttribute="trailing" id="OVe-Xa-KeP"/>
+                                    <constraint firstItem="2we-dk-Skf" firstAttribute="top" secondItem="zib-gE-873" secondAttribute="top" id="fHa-1w-HPu"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkv-KA-m1O">
+                                <rect key="frame" x="118" y="208" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SC-EP-gFF">
+                                <rect key="frame" x="407.5" y="208" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zib-gE-873" firstAttribute="top" secondItem="kxP-rn-m1d" secondAttribute="bottom" constant="30" id="3Bg-na-tvI"/>
+                            <constraint firstItem="7SC-EP-gFF" firstAttribute="top" secondItem="zib-gE-873" secondAttribute="bottom" constant="10" id="IHv-Bz-5sN"/>
                             <constraint firstItem="9FY-6H-mWJ" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="KlA-V2-meP"/>
+                            <constraint firstItem="rkv-KA-m1O" firstAttribute="centerX" secondItem="2we-dk-Skf" secondAttribute="centerX" id="YN7-ad-60A"/>
+                            <constraint firstAttribute="trailing" secondItem="zib-gE-873" secondAttribute="trailing" constant="15" id="ZkT-a7-gnJ"/>
+                            <constraint firstItem="rkv-KA-m1O" firstAttribute="top" secondItem="zib-gE-873" secondAttribute="bottom" constant="10" id="cR6-Za-MZs"/>
+                            <constraint firstItem="zib-gE-873" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="eJJ-Z4-LS4"/>
                             <constraint firstAttribute="trailing" secondItem="9FY-6H-mWJ" secondAttribute="trailing" constant="15" id="ewh-Et-yUJ"/>
                             <constraint firstAttribute="trailing" secondItem="kxP-rn-m1d" secondAttribute="trailing" constant="15" id="imo-JI-MN8"/>
                             <constraint firstItem="kxP-rn-m1d" firstAttribute="top" secondItem="9FY-6H-mWJ" secondAttribute="bottom" constant="8" id="m81-CT-Iiy"/>
                             <constraint firstItem="kxP-rn-m1d" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="15" id="nzD-ZR-dP5"/>
+                            <constraint firstItem="7SC-EP-gFF" firstAttribute="centerX" secondItem="6w8-kg-7yW" secondAttribute="centerX" id="qK4-xy-ISZ"/>
                             <constraint firstItem="9FY-6H-mWJ" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="15" id="wAj-wa-Lot"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="irA-ou-3i6"/>
+                    <connections>
+                        <outlet property="endDateLabel" destination="7SC-EP-gFF" id="tqi-BY-dzC"/>
+                        <outlet property="startDateLabel" destination="rkv-KA-m1O" id="Eoy-N3-Sb3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="433"/>
+            <point key="canvasLocation" x="1078" y="474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f29-e9-HsY">

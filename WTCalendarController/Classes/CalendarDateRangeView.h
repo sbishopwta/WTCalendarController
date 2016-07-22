@@ -15,6 +15,4 @@
 - (void)setStartDate:(NSString *)startDateString;
 - (void)setEndDate:(NSString *)endDateString;
 
-//hello this is a test
-
 @end

@@ -32,11 +32,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'WTCalendarController/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'WTCalendarController' => ['WTCalendarController/Assets/*.png']
-  # }
+  s.source_files = 'WTCalendarController/Classes/*.m'
+  s.public_header_files = 'WTCalendarController/Classes/*.h'
+  s.resource_bundles = {
+    'WTCalendarController' => ['WTCalendarController/Assets/*.xib', 'WTCalendarController/Assets/*.storyboard']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

@@ -8,9 +8,12 @@
 
 #import "WTViewController.h"
 #import <WTCalendarController/CalendarViewController.h>
-//#import <WTCalendarController/CalendarController.h>
+#import <WTCalendarController/DateHelper.h>
 
 @interface WTViewController () <CalendarDelegate>
+@property (strong, nonatomic) IBOutlet UILabel *startDateLabel;
+@property (strong, nonatomic) IBOutlet UILabel *endDateLabel;
+
 @end
 
 @implementation WTViewController
@@ -53,5 +56,23 @@
     [self.navigationController pushViewController:calendarController animated:YES];
 }
 
+#pragma mark - Calendar Delegate
+
+/***
+ * Called when a user selects a date.
+ */
+- (void)didSelectDate:(NSDate *)date
+{
+    NSLog(@"Date was selected: %@", date);
+}
+
+/***
+ * Returns the selected start and end date when the calendar is dismissed.
+ */
+- (void)didSelectStartDate:(NSDate *)startDate andEndDate:(NSDate *)endDate
+{
+    self.startDateLabel.text = startDate == nil ? @"" : [DateHelper date_dayMonthAndYear:startDate];
+    self.endDateLabel.text = endDate == nil ? @"" : [DateHelper date_dayMonthAndYear:endDate];
+}
 
 @end

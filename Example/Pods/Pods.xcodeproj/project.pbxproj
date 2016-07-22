@@ -14,9 +14,6 @@
 		4C25416AECD5F91B80F4134CFDE3B231 /* Pods-WTCalendarController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F745F4CFE0E50751465E379E152152D /* Pods-WTCalendarController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C77A541A763111E880B4589C137B1A0 /* WTCalendarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4502B6C8C61DA582FCC38E97C20D92 /* WTCalendarController-dummy.m */; };
 		51F7FC8DAF5E7816F5B496A48EA6324C /* Pods-WTCalendarController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3568681A1AE21B9C38350C0BF0527C9D /* Pods-WTCalendarController_Tests-dummy.m */; };
-		54F1EC2EECD7163F52004EDA9C5A9678 /* CalendarDayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E533479B4922D81FB585A68A041DE14D /* CalendarDayCollectionViewCell.xib */; };
-		7A46DD06E4829EE1BFCC0DE6C3E35DE7 /* CalendarMonthHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00A6BA69AC7E1839F0D330CF17F517C /* CalendarMonthHeaderView.xib */; };
-		915A639DAAB7F150DC6A762AAFD9EF4E /* CalendarDateRangeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52FF79D7230C8DE0B6D24FDC9A349E4 /* CalendarDateRangeView.xib */; };
 		934C48ABC0061285D16187F650B82510 /* DateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A61431F65DD59A0181C46625D4E11E /* DateHelper.m */; };
 		93D7564007643C062E9A48B8A137E53C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
 		943CFB327E163587ABAEB77904D67380 /* CalendarDateRangeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2AA893749ED0123817FA2C9312BE79 /* CalendarDateRangeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,7 +70,6 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A044CC9C75242BEAF8DEB518FF087D2 /* Pods-WTCalendarController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WTCalendarController_Example-umbrella.h"; sourceTree = "<group>"; };
 		9E1C760C114C312D6878243DCC42CBE6 /* CalendarViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
-		A52FF79D7230C8DE0B6D24FDC9A349E4 /* CalendarDateRangeView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CalendarDateRangeView.xib; sourceTree = "<group>"; };
 		A65417BEF0B92029C5C6FAD28AD1F571 /* Pods-WTCalendarController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WTCalendarController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		AFAB909E69349EFBA3D80B64B648CAED /* WTCalendarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WTCalendarController.xcconfig; sourceTree = "<group>"; };
 		B604D554DE3FB9B59730C3D199F8BD4A /* WTCalendarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WTCalendarController-umbrella.h"; sourceTree = "<group>"; };
@@ -84,8 +80,6 @@
 		DA4502B6C8C61DA582FCC38E97C20D92 /* WTCalendarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WTCalendarController-dummy.m"; sourceTree = "<group>"; };
 		DC6C5D241CA5C82B7E22FBF97E946EC2 /* Pods-WTCalendarController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCalendarController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCFC5E8D956D26085393E04711458D15 /* Pods-WTCalendarController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WTCalendarController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E00A6BA69AC7E1839F0D330CF17F517C /* CalendarMonthHeaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CalendarMonthHeaderView.xib; sourceTree = "<group>"; };
-		E533479B4922D81FB585A68A041DE14D /* CalendarDayCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CalendarDayCollectionViewCell.xib; sourceTree = "<group>"; };
 		F4AC08F1767FC846E67F8EA63D25497E /* Pods_WTCalendarController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTCalendarController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD7A74FD1D3D81FD00789568 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Calendar.storyboard; path = ../../Example/Pods/Calendar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,13 +181,10 @@
 				FD7A74FD1D3D81FD00789568 /* Calendar.storyboard */,
 				BE2AA893749ED0123817FA2C9312BE79 /* CalendarDateRangeView.h */,
 				5517FA3F24138357216E69893F4FA46A /* CalendarDateRangeView.m */,
-				A52FF79D7230C8DE0B6D24FDC9A349E4 /* CalendarDateRangeView.xib */,
 				63E0495A66363D99D8D11315B51FFF58 /* CalendarDayCollectionViewCell.h */,
 				C98719728B7B4C846FD2CEC3FEE240F5 /* CalendarDayCollectionViewCell.m */,
-				E533479B4922D81FB585A68A041DE14D /* CalendarDayCollectionViewCell.xib */,
 				1FFCE73B8AAE77B81B68B8E156742C77 /* CalendarMonthHeaderView.h */,
 				2DAA0A5C131AABC4074DF26C1E6E7934 /* CalendarMonthHeaderView.m */,
-				E00A6BA69AC7E1839F0D330CF17F517C /* CalendarMonthHeaderView.xib */,
 				26A79267A1DB744D7FC54778AB4E1B45 /* CalendarViewController.h */,
 				9E1C760C114C312D6878243DCC42CBE6 /* CalendarViewController.m */,
 				C52A6E0491B250473C972D9162EA52EC /* DateHelper.h */,
@@ -383,9 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD7A74FE1D3D81FD00789568 /* Calendar.storyboard in Resources */,
-				915A639DAAB7F150DC6A762AAFD9EF4E /* CalendarDateRangeView.xib in Resources */,
-				7A46DD06E4829EE1BFCC0DE6C3E35DE7 /* CalendarMonthHeaderView.xib in Resources */,
-				54F1EC2EECD7163F52004EDA9C5A9678 /* CalendarDayCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

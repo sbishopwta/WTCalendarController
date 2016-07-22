@@ -20,9 +20,10 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
 {
     if (self = [super initWithCoder:aDecoder])
-     {
-         self.backgroundColor = [UIColor clearColor];
-         NSBundle *bundle = [NSBundle bundleForClass:[CalendarDateRangeView class]];
+    {
+        self.backgroundColor = [UIColor clearColor];
+        NSURL *bundleUrl = [[NSBundle mainBundle] URLForResource:@"WTCalendarController" withExtension:@"bundle"];
+        NSBundle *bundle = [NSBundle bundleWithURL:bundleUrl];
         CalendarDateRangeView *checkInOutView = [[bundle loadNibNamed:@"CalendarDateRangeView"
                                                                        owner:self
                                                                      options:nil] firstObject];

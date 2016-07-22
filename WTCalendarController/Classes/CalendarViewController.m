@@ -57,7 +57,9 @@ const NSInteger numberOfColumns = 7;
 
 + (instancetype)buildWithDelegate:(id<CalendarDelegate>)delegate
 {
-    NSBundle *bundle = [NSBundle bundleForClass:[CalendarViewController class]];
+    NSURL *bundleUrl = [[NSBundle mainBundle] URLForResource:@"WTCalendarController" withExtension:@"bundle"];
+    NSBundle *bundle = bundleUrl == nil ? [NSBundle mainBundle] : [NSBundle bundleWithURL:bundleUrl];
+
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Calendar" bundle:bundle];
     CalendarViewController *calendarController = [storyboard instantiateInitialViewController];
     calendarController.delegate = delegate;
@@ -228,7 +230,9 @@ const NSInteger numberOfColumns = 7;
 
     self.collectionView.allowsMultipleSelection = YES;
 
-    NSBundle *bundle = [NSBundle bundleForClass:[CalendarDayCollectionViewCell class]];
+    NSURL *bundleUrl = [[NSBundle mainBundle] URLForResource:@"WTCalendarController" withExtension:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithURL:bundleUrl];
+
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CalendarDayCollectionViewCell class]) bundle:bundle] forCellWithReuseIdentifier:CalendarDayCellReuseIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([CalendarMonthHeaderView class]) bundle:bundle] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:CalendarMonthViewReuseIdentifier];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange) name:UIDeviceOrientationDidChangeNotification object:nil];
