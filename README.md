@@ -1,15 +1,16 @@
-# WTCalendarController
+# WTCalendarController 
 
-[![CI Status](http://img.shields.io/travis/Steven Bishop/WTCalendarController.svg?style=flat)](https://travis-ci.org/Steven Bishop/WTCalendarController)
+<!--[![CI Status](http://img.shields.io/travis/Steven Bishop/WTCalendarController.svg?style=flat)](https://travis-ci.org/Steven Bishop/WTCalendarController)-->
 [![Version](https://img.shields.io/cocoapods/v/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 [![License](https://img.shields.io/cocoapods/l/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 [![Platform](https://img.shields.io/cocoapods/p/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 
-## Example
+![](/Users/stevenbishop/Projects/Cocoapods/WTCalendarController/Screenshots/screenshot1.jpg)
+![](/Users/stevenbishop/Projects/Cocoapods/WTCalendarController/Screenshots/screenshot2.jpg)
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+iOS 8+ - supports iPhone & iPad. 
 
 ## Installation
 
@@ -19,10 +20,14 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "WTCalendarController"
 ```
+Alternatively, you can manually drag the [implementation files](https://github.com/sbishopwta/WTCalendarController/tree/master/WTCalendarController/Classes) and the [interface builder files](https://github.com/sbishopwta/WTCalendarController/tree/master/WTCalendarController/Assets) into your project.
 
-## Author
 
-Steven Bishop, sbishop@alumni.berklee.edu
+
+## Configuration
+
+Colors and fonts for almost all UI elements are configurable. See the [header files](https://github.com/sbishopwta/WTCalendarController/blob/master/WTCalendarController/Classes/CalendarViewController.h) for each class. For more on how to do this see the Example Project.
+
 
 ## License
 
