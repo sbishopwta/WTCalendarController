@@ -5,8 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 [![Platform](https://img.shields.io/cocoapods/p/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 
-![](/Users/stevenbishop/Projects/Cocoapods/WTCalendarController/Screenshots/screenshot1.jpg)
-![](/Users/stevenbishop/Projects/Cocoapods/WTCalendarController/Screenshots/screenshot2.jpg)
+![](https://github.com/sbishopwta/WTCalendarController/blob/master/Screenshots/screenshot1.jpg)
+![](https://github.com/sbishopwta/WTCalendarController/blob/master/Screenshots/screenshot2.jpg)
 
 
 ## Requirements
