@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= https://github.com/sbishopwta/WTCalendarController/blob/master/Screenshots/icnBanner.jpg/>
+  <img src=https://github.com/sbishopwta/WTCalendarController/blob/feature/asset-update/Assets/icnBanner.png/>
 </p>
 # WTCalendarController 
 
