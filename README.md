@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= https://github.com/sbishopwta/WTCalendarController/blob/master/Screenshots/icnBanner.jpg/>
+  <img src= https://github.com/sbishopwta/WTCalendarController/blob/master/Assets/icnBanner.jpg/>
 </p>
 # WTCalendarController 
 
@@ -8,8 +8,8 @@
 [![License](https://img.shields.io/cocoapods/l/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 [![Platform](https://img.shields.io/cocoapods/p/WTCalendarController.svg?style=flat)](http://cocoapods.org/pods/WTCalendarController)
 
-![](https://github.com/sbishopwta/WTCalendarController/blob/master/Screenshots/screenshot1.jpg)
-![](https://github.com/sbishopwta/WTCalendarController/blob/master/Screenshots/screenshot2.jpg)
+![](https://github.com/sbishopwta/WTCalendarController/blob/master/Assets/screenshot1.jpg)
+![](https://github.com/sbishopwta/WTCalendarController/blob/master/Assets/screenshot2.jpg)
 
 
 ## Requirements
